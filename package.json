@@ -1,0 +1,35 @@
+{
+  "name": "jest-babel-classes",
+  "version": "1.0.0",
+  "description": "Does Jest work with Babel classes?",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pbomb/jest-babel-classes.git"
+  },
+  "keywords": [
+    "jest",
+    "babel",
+    "es6"
+  ],
+  "author": "Matt Parrish <matt.r.parrish@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pbomb/jest-babel-classes/issues"
+  },
+  "homepage": "https://github.com/pbomb/jest-babel-classes",
+  "devDependencies": {
+    "babel": "^4.7.12",
+    "babel-jest": "^4.0.0",
+    "babel-runtime": "^4.7.12",
+    "jest-cli": "^0.4.0"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testFileExtensions": ["es6", "js"],
+    "moduleFileExtensions": ["js", "json", "es6"]
+  }
+}
